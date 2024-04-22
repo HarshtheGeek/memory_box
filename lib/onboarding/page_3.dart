@@ -20,14 +20,14 @@ class Page3 extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   Image.asset(
-                    'assets/twemoji_brain.png',
+                    'assets/chatbot.png',
                     scale: 1,
                   ),
                   SizedBox(
                     height: 30,
                   ),
                   Text(
-                    "Gamified Memory \n Training",
+                    "Personal ChatBot",
                     style: TextStyle(
                         fontFamily: 'Productsansmedium',
                         fontSize: 40,
@@ -40,7 +40,7 @@ class Page3 extends StatelessWidget {
                     height: 30,
                   ),
                   Text(
-                    "Memory Box is a mobile-based application backed by a web application that ensures compatibility and stability on its own accord.",
+                    "It makes it possible for people with Alzheimer's disease to retain a sense of identity during the process of the disease poses a great challenge to care-givers, professionals and family caregivers.",
                     style: TextStyle(
                         fontFamily: 'Productsansmedium',
                         color: Colors.white,

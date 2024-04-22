@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:memory_box/Screen/HomeScreen.dart';
 import 'package:memory_box/Screen/LogInPage.dart';
+import 'package:memory_box/Screen/dosagetracker.dart';
 import 'package:memory_box/StartingScreen.dart';
 import 'package:memory_box/onboarding/mainonboarding.dart';
+import 'Screen/ToDolist.dart';
 
 void main() {
   runApp(const MyApp());
@@ -20,7 +23,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: onboarding(),
+      home: Homepage(),
     );
   }
 }

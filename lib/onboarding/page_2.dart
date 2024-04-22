@@ -20,14 +20,14 @@ class Page2 extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   Image.asset(
-                    'assets/twemoji_brain.png',
+                    'assets/night.png',
                     scale: 1,
                   ),
                   SizedBox(
                     height: 30,
                   ),
                   Text(
-                    "Gamified Memory \n Training",
+                    "Progress Tracker",
                     style: TextStyle(
                         fontFamily: 'Productsansmedium',
                         fontSize: 40,
@@ -40,7 +40,7 @@ class Page2 extends StatelessWidget {
                     height: 30,
                   ),
                   Text(
-                    "Memory Box is a mobile-based application backed by a web application that ensures compatibility and stability on its own accord.",
+                    "Empowering app for Alzheimer's! Simple interface, voice control, & reminders aid memory. GPS tracking & virtual fences ensure safety. Video calls & memory albums connect patients to loved ones.",
                     style: TextStyle(
                         fontFamily: 'Productsansmedium',
                         color: Colors.white,

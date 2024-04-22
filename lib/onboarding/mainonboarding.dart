@@ -10,38 +10,45 @@ class onboarding extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.deepPurple[200],
-      body: Column(
-        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-        children: [
-          // page view
-          SizedBox(
-            height: 700,
-            child: PageView(
+      body: Container(
+        decoration: BoxDecoration(
+          gradient: LinearGradient(
+            begin: Alignment.topLeft,
+            end: Alignment.bottomRight,
+            colors: [Color(0xFFCE9FFC),
+              Color(0xFF7367F0),],
+          ),
+        ),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          children: [
+            // page view
+            SizedBox(
+              height: 700,
+              child: PageView(
+                controller: _controller,
+                children: const [
+                  Page1(),
+                  Page2(),
+                  Page3(),
+                  Page4(),
+                ],
+              ),
+            ),
+
+            SmoothPageIndicator(
               controller: _controller,
-              children: const [
-                Page1(),
-                Page2(),
-                Page3(),
-                Page4(),
-              ],
+              count: 4,
+              effect: WormEffect(
+                activeDotColor: Colors.deepPurple,
+                dotColor: Colors.deepPurple.shade100,
+                dotHeight: 10,
+                dotWidth: 10,
+                spacing: 10,
+              ),
             ),
-          ),
-
-          SmoothPageIndicator(
-            controller: _controller,
-            count: 4,
-            effect: WormEffect(
-              activeDotColor: Colors.deepPurple,
-              dotColor: Colors.deepPurple.shade100,
-              dotHeight: 10,
-              dotWidth: 10,
-              spacing: 16,
-              //verticalOffset: 50,
-
-            ),
-          ),
-        ],
+          ],
+        ),
       ),
     );
   }

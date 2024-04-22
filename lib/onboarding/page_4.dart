@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:memory_box/Screen/HomeScreen.dart';
+import 'package:memory_box/Utils/ElevatedButton.dart';
 
 class Page4 extends StatelessWidget {
   const Page4({Key? key}) : super(key: key);
@@ -20,14 +22,14 @@ class Page4 extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   Image.asset(
-                    'assets/twemoji_brain.png',
+                    'assets/women.png',
                     scale: 1,
                   ),
                   SizedBox(
                     height: 30,
                   ),
                   Text(
-                    "Gamified Memory \n Training",
+                    "Prescription & Dosage tracker",
                     style: TextStyle(
                         fontFamily: 'Productsansmedium',
                         fontSize: 40,
@@ -40,13 +42,17 @@ class Page4 extends StatelessWidget {
                     height: 30,
                   ),
                   Text(
-                    "Memory Box is a mobile-based application backed by a web application that ensures compatibility and stability on its own accord.",
+                    "Rather than being a solution for a particular problem, our application ensures multiple solutions for other related problems.",
                     style: TextStyle(
                         fontFamily: 'Productsansmedium',
                         color: Colors.white,
                         fontSize: 20),
                     textAlign: TextAlign.center,
                   ),
+                  SizedBox(height: 15,),
+                  ElevatedButton(onPressed: (){
+                    Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=>Homepage()));
+                  }, child: Text("LETS GO"))
                 ],
               ),
             ),

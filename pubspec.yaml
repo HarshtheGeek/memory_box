@@ -13,6 +13,10 @@ dependencies:
   cupertino_icons: ^1.0.2
   get: ^4.6.6
   smooth_page_indicator:
+  table_calendar:
+  timeline_tile:
+  google_nav_bar:
+  provider: 
 
 dev_dependencies:
   flutter_test:
